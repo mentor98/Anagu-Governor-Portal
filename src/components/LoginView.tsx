@@ -28,12 +28,6 @@ const PORTAL_LINKS = [
       'bg-emerald-700 hover:bg-emerald-800 text-white shadow-sm shadow-emerald-900/10',
   },
   {
-    label: 'Governors Portal',
-    href: 'https://anagu-governor-portal.vercel.app/',
-    className:
-      'bg-emerald-500 hover:bg-emerald-600 text-white shadow-sm shadow-emerald-900/10',
-  },
-  {
     label: 'Registrar Portal',
     href: 'https://anagu-registrar-portal.vercel.app/',
     className:
@@ -89,11 +83,11 @@ export function LoginView({ onAuthenticated }: LoginViewProps) {
         {/* Left Column: Clean Login Card */}
         <div className="flex flex-col justify-center px-6 py-10 sm:px-12 lg:px-16 bg-white border-r border-slate-200">
           <div className="w-full max-w-md mx-auto">
-            {/* Centered Logo Above -> Bold Governor Portal -> ANAGU Land Administration Below */}
+            {/* Centered Logo Above -> Bold Executive Governor -> ANAGU Land Administration Below */}
             <div className="flex flex-col items-center text-center">
               <AnaguLogo size={60} />
               <h1 className="mt-4 text-3xl font-display font-extrabold text-slate-900 tracking-tight">
-                Governor Portal
+                Executive Governor
               </h1>
               <p className="mt-1.5 text-sm font-semibold text-emerald-700 tracking-wide">
                 ANAGU Land Administration
@@ -175,7 +169,7 @@ export function LoginView({ onAuthenticated }: LoginViewProps) {
               <p className="text-xs font-semibold text-slate-500 text-center mb-3.5">
                 ANAGU Portals
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {PORTAL_LINKS.map((portal) => (
                   <a
                     key={portal.label}
