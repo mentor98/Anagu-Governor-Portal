@@ -1,0 +1,6 @@
+{
+  "name": "ANAGU Land Administration — Executive Governor Portal",
+  "description": "Executive Governor Portal for ANAGU Land Administration connected to the shared Supabase PostGIS registry and Polygon Amoy (Chain ID 80002) smart contracts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
