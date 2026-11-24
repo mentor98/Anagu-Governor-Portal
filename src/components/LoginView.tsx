@@ -8,6 +8,7 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { apiRequest } from '../lib/api';
+import { ANAGU_CONFIG } from '../lib/contracts';
 import type { GovernorProfile } from '../lib/types';
 import { AnaguLogo, AuthHeroComposition } from './BrandMark';
 
@@ -26,6 +27,12 @@ const PORTAL_LINKS = [
     href: 'https://anagu.vercel.app/',
     className:
       'bg-emerald-700 hover:bg-emerald-800 text-white shadow-sm shadow-emerald-900/10',
+  },
+  {
+    label: 'Admin Portal',
+    href: 'https://anagu-admin.vercel.app/',
+    className:
+      'bg-slate-800 hover:bg-slate-900 text-white shadow-sm shadow-slate-900/10',
   },
   {
     label: 'Registrar Portal',
@@ -85,7 +92,7 @@ export function LoginView({ onAuthenticated }: LoginViewProps) {
           <div className="w-full max-w-md mx-auto">
             {/* Centered Logo Above -> Bold Executive Governor -> ANAGU Land Administration Below */}
             <div className="flex flex-col items-center text-center">
-              <AnaguLogo size={60} />
+              <AnaguLogo size={60} src={ANAGU_CONFIG.authLogoUrl} />
               <h1 className="mt-4 text-3xl font-display font-extrabold text-slate-900 tracking-tight">
                 Executive Governor
               </h1>
@@ -169,7 +176,7 @@ export function LoginView({ onAuthenticated }: LoginViewProps) {
               <p className="text-xs font-semibold text-slate-500 text-center mb-3.5">
                 ANAGU Portals
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 {PORTAL_LINKS.map((portal) => (
                   <a
                     key={portal.label}

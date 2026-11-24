@@ -6,6 +6,8 @@ export const ANAGU_CONFIG = {
   metadataUriBase: 'https://anagu.land/api/gis/parcels',
   logoUrl:
     'https://res.cloudinary.com/jinrrp4r/image/upload/v1795164079/ANAGU_Orbital_Monogram_Logo_wgtw8s.png',
+  authLogoUrl:
+    'https://res.cloudinary.com/jinrrp4r/image/upload/v1795507507/Glossy_Emerald_A_Orbit_Logo_joxrb8.png',
   authHeroUrl:
     'https://res.cloudinary.com/jinrrp4r/image/upload/v1795165973/Glossy_Green_Orbital_Planet_Composition_w6njaw.png',
   crossPortalLinks: {

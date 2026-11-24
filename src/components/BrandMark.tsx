@@ -4,9 +4,11 @@ import { ANAGU_CONFIG } from '../lib/contracts';
 export function AnaguLogo({
   size = 36,
   className = '',
+  src = ANAGU_CONFIG.logoUrl,
 }: {
   size?: number;
   className?: string;
+  src?: string;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -24,7 +26,7 @@ export function AnaguLogo({
 
   return (
     <img
-      src={ANAGU_CONFIG.logoUrl}
+      src={src}
       alt="ANAGU Orbital Monogram"
       width={size}
       height={size}
